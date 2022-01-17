@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper & Scissors</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="selections"> 
+        <button class="selection" data-selection="rock">🪨</button>
+        <button class="selection" data-selection="paper">📄</button>
+        <button class="selection" data-selection="scissor">✂</button>
+    </div>
+
+    <h1 id="winner" style="display: none; text-align: center;"></h1>
+
+    <div class="results">
+        <div class="result">
+           <p style="font-size: 2rem;" id="player-name">You</p>
+            Score <span class="results-score" style="font-size: 1rem;">0</span>
+            <ul class="player-move-list"> </ul>
+        </div>
+        <h1>VS</h1>
+        <div class="result">
+            <p style="font-size: 2rem;">Computer</p>
+            Score <span class="results-score" style="font-size: 1rem;">0</span>
+            <ul class="computer-move-list"> </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>
