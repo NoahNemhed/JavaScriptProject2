@@ -218,10 +218,18 @@ function endGame(){
     const playerScore = parseInt(document.getElementsByClassName("results-score")[0].textContent);
     const computerScore = parseInt(document.getElementsByClassName("results-score")[1].textContent);
     if(playerScore == 3){
-        alert(tag + " " +"won game")  
-        if(window.confirm){
-            resetGame();
-        }     
+        if(tag === null){
+            alert("You won game")  
+            if(window.confirm){
+                resetGame();
+            }    
+        }else{
+            alert(tag + " " +"won game")  
+            if(window.confirm){
+                resetGame();
+            }    
+        }
+        
     }
     if(computerScore == 3){
         alert("Computer won game") 
